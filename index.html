@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" >
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Portefolio</title>
   </head>
   <body>
     <div class="loading">
@@ -46,22 +47,40 @@
         <div class="container">
             <div class="slider">
                 <div class="slides" style="--img: url('./assets/1dbe0ba8a9b3e2c1b9007a9155ba0ff7.jpg')">
-                    <div class="content"></div>
+                    <div class="content">
+                       <h2>Projet 6</h2> 
+                       <p>Salution</p>
+                    </div>
                 </div>
                 <div class="slides" style="--img: url('./assets/03_Viego_Portrait_Web.jpg')">
-                    <div class="content"></div>
+                    <div class="content">
+                        <h2>Projet 1</h2> 
+                        <p>Salution</p>
+                    </div>
                 </div>
                 <div class="slides" style="--img: url('./assets/836f114cb1d40f838fb4058a8df5f033.jpg')">
-                    <div class="content"></div>
+                    <div class="content">
+                        <h2>Projet 2</h2> 
+                        <p>Salution</p>
+                    </div>
                 </div>
                 <div class="slides" style="--img: url('./assets/8422bb607da39d3b4a52385e73e41b86.jpg')">
-                    <div class="content"></div>
+                    <div class="content">
+                        <h2>Projet 3</h2> 
+                        <p>Salution</p>
+                    </div>
                 </div>
                 <div class="slides" style="--img: url('./assets/94947aca13261672.jpg')">
-                    <div class="content"></div>
+                    <div class="content">
+                        <h2>Projet 4</h2> 
+                        <p>Salution</p>
+                    </div>
                 </div>
                 <div class="slides" style="--img: url('./assets/879933.png')">
-                    <div class="content"></div>
+                    <div class="content">
+                        <h2>Projet 5</h2>
+                        <p>Salution</p> 
+                    </div>
                 </div>
             </div>
             <div class="buttons">
@@ -69,6 +88,20 @@
                 <span class="next"></span>
             </div>
         </div>
+        <script>
+            let next = document.querySelector('.next');
+            let prev = document.querySelector('.prev');
+            let slider = document.querySelector('.slider');
+
+            next.addEventListener('click', function(){
+                let slides = document.querySelectorAll('.slides');
+                slider.appendChild(slides[0])
+            })
+            prev.addEventListener('click', function(){
+                let slides = document.querySelectorAll('.slides');
+                slider.prepend(slides[slides.length - 1])
+            })
+        </script>
     </main>
   </body>
 </html>
