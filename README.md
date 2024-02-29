@@ -1,1 +1,0 @@
-Le projet est toujours en cours de dévellopement. Il y a que la forme de mon portefolio à l'intérieur avec des images aléatoires posé dedans. Une fois que des projet seront fini ils seront déposé dans ce portfolio.  
